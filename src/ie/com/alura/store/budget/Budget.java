@@ -5,10 +5,12 @@ import java.math.BigDecimal;
 public class Budget {
 
 	private BigDecimal value;
+	private int itemQuatity;
 
-	public Budget(BigDecimal value) {
+	public Budget(BigDecimal value, int itemQuatity) {
 		super();
 		this.value = value;
+		this.itemQuatity = itemQuatity;
 	}
 
 	public BigDecimal getValue() {
@@ -17,6 +19,14 @@ public class Budget {
 
 	public void setValue(BigDecimal value) {
 		this.value = value;
+	}
+
+	public int getItemQuatity() {
+		return itemQuatity;
+	}
+
+	public void setItemQuatity(int itemQuatity) {
+		this.itemQuatity = itemQuatity;
 	}
 
 }
